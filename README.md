@@ -1,3 +1,3 @@
 # DataMining
 
-# This is the Data Mining repository, here we'll be writing all the info about the repo. So, this section will be apparently updated weekly.
+# This is the development branch, this actually was updated as the default branch so we'll be working on this instead of the master branch.
