@@ -15,15 +15,34 @@
 #5. Increase counter if the condition is true
 #6. return a result <- counter / N
 
-N <-100
-Counter <-0
 
-for(i in rnorm(N, mean = 0, sd = 1 ))
+#1.  Initialize sample size
+x<-rnorm(10)
+y <- dnorm(x,mean = 0, sd = 1)
+plot(x,y)
+
+#2. Initialize counter
+count <- 0
+res <- 0
+
+#3.  loop for(i in rnorm(size))
+for(i in rnorm(10))
 {
-  if(i >=-1 && i <=1){
-    Counter<- Counter+1
+  count <- count+1
+  print(count)
+#4. Check if the iterated variable falls
+  if(i<=1&&i>=-1){
+    print(i)
+    print("Esta entre -1 y 1")
+    #5. Increase counter if the condition is true
+    res <- res+1
+  }
+  else
+  {
+    print(i)
+    print("Fuera del rango")
   }
 }
-result <-Counter/N
-
-print (result)
+#6. return a result <- counter / N
+Res <- res/count
+print(Res)
