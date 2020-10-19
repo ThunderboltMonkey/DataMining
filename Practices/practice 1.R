@@ -18,9 +18,13 @@ Check that Mean(Xn)->E(X) as you rerun your script while increasing N
 
 ## 1.  Initialize sample size
 
-```{r}
+```r
 x <- rnorm(10)
+```
+```r
 y <- dnorm(x, mean = 0, sd = 1)
+```
+```r
 plot(x,y)
 ```
 
