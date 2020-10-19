@@ -16,68 +16,75 @@ Check that Mean(Xn)->E(X) as you rerun your script while increasing N
 
 # **Step by step script**
 ## 1.  Initialize sample size
-    ```R
-    x <- rnorm(10)
-    y <- dnorm(x, mean = 0, sd = 1)
-    plot(x,y)
-    ```
+```r
+x <- rnorm(10)
+y <- dnorm(x, mean = 0, sd = 1)
+plot(x,y)
+```
 
 ## 2. Initialize counter
-    ```R
-    count <- 0
-    res <- 0
-    ```
+```r
+count <- 0
+res <- 0
+```
 
 ## 3.  Loop for(i in rnorm(size))
-    ```R
-    for(i in rnorm(10))
-    {
-      count <- count + 1
-      print(count)
-      ```
+```r
+for(i in rnorm(10))
+{
+  count <- count + 1
+  print(count)
+```
 
 ## 4. Check if the iterated variable falls between -1 and 1
-      
-      if(i <= 1 && i >= -1){
-        print(i)
-        print("It's between -1 y 1")
+```r
+if(i <= 1 && i >= -1){
+  print(i)
+  print("It's between -1 y 1")
+```
 
 ## 5. Increase counter if the condition results true
-        res <- res + 1
-      }
-      else
-      {
-        print(i)
-        print("Out of range")
-      }
-    }
+```r
+  res <- res + 1
+  }
+  else
+  {
+    print(i)
+    print("Out of range")
+  }
+}
+```
 ## 6. Return a result <- counter / N
-    Res <- res / count
-    print(Res)
+```r
+  Res <- res / count
+  print(Res)
+```
 
 # **Full Script (the one running on R Studio)**
-    x <- rnorm(10)
-    y <- dnorm(x, mean = 0, sd = 1)
-    plot(x,y)
+```r
+x <- rnorm(10)
+y <- dnorm(x, mean = 0, sd = 1)
+plot(x,y)
 
-    count <- 0
-    res <- 0
+count <- 0
+res <- 0
 
-    for(i in rnorm(10))
-    {
-      count <- count + 1
-      print(count)
-      if(i <= 1 && i >= -1){
-        print(i)
-        print("It's between -1 y 1")
-        res <- res + 1
-      }
-      else
-      {
-        print(i)
-        print("Out of range")
-      }
-    }
+for(i in rnorm(10))
+{
+  count <- count + 1
+  print(count)
+  if(i <= 1 && i >= -1){
+    print(i)
+    print("It's between -1 y 1")
+    res <- res + 1
+  }
+  else
+  {
+    print(i)
+    print("Out of range")
+  }
+}
 
-    Res <- res / count
-    print(Res)
+Res <- res / count
+print(Res)
+```
