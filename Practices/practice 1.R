@@ -16,22 +16,22 @@ Check that Mean(Xn)->E(X) as you rerun your script while increasing N
 
 # **Step by step script**
 
-## 1.  Initialize sample size
 
+> ## 1.  Initialize sample size
 ```r
 x <- rnorm(10)
 y <- dnorm(x, mean = 0, sd = 1)
 plot(x,y)
 ```
 
-## 2. Initialize counter
+> ## 2. Initialize counter
 
 ```r
 count <- 0
 res <- 0
 ```
 
-## 3.  Loop for(i in rnorm(size))
+> ## 3.  Loop for(i in rnorm(size))
 
 ```r
 for(i in rnorm(10))
@@ -40,7 +40,7 @@ for(i in rnorm(10))
   print(count)
 ```
 
-## 4. Check if the iterated variable falls between -1 and 1
+> ## 4. Check if the iterated variable falls between -1 and 1
 
 ```r
 if(i <= 1 && i >= -1){
@@ -48,7 +48,7 @@ if(i <= 1 && i >= -1){
   print("It's between -1 y 1")
 ```
 
-## 5. Increase counter if the condition results true
+> ## 5. Increase counter if the condition results true
 
 ```r
   res <- res + 1
@@ -61,7 +61,7 @@ if(i <= 1 && i >= -1){
 }
 ```
 
-## 6. Return a result <- counter / N
+> ## 6. Return a result <- counter / N
 
 ```r
   Res <- res / count
