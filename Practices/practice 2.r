@@ -153,7 +153,7 @@ Command to rename the columns of a vector.
 
 Example:
 
-    rownames (x) = c ("Jesus", "Rodrigo", "Angel")
+    rownames (x) = c ("Jose", "Juan", "Javier")
 
 # **20. Applies a function to an array, list or vector that is passed as a parameter.**
 Argument x: matrix, list or vector.
