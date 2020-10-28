@@ -76,8 +76,12 @@
         color = Region, size=I(3), shape=I(19), alpha =I(.4), 
         main = "Fertility Rate vs Life Expectancy by Region in 1960")
 
+![Fertility Rate vs Life Expectancy by Country in 2013](https://github.com/ThunderboltMonkey/DataMining/blob/unit_1/Evaluation/1960Region.png)
+
 ## Plotting by region in 2013
 
     qplot(data = le_dfMerge, x = Fertility.Rate, y = Life_Expectancy_2013,
         color = Region, size=I(3), shape=I(19), alpha =I(.4), 
         main = "Fertility Rate vs Life Expectancy by Region in 2013")
+
+![Fertility Rate vs Life Expectancy by Country in 2013](https://github.com/ThunderboltMonkey/DataMining/blob/unit_1/Evaluation/2013Region.png)
