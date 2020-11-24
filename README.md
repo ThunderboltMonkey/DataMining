@@ -8,7 +8,7 @@
 
 * ## Research
 ### This folder is where we are putting all the investigations.
-
+- [Investigation 1](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Investigation)
 
 * ## Practices
 ### This is where the practices will be.
