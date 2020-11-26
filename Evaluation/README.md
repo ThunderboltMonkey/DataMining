@@ -55,14 +55,14 @@
         axis.title.y = element_text(color="Purple", size=14)
         )  +  ggtitle("Domestic Gross % by Genre") + ylab("GrossUS") + xlab("Genre")
 
-## Original
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/original.PNG)
-
-## Our Final Version
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
-
 ## Conclusion
 It was actually a very simple practice to carry out, since seeing the original graph helps to deduce many things, for example the studios and movie genres that should be used. 
 From then on, the most complicated thing in our opinion was the formatting of the graph to be able to generate it in a similar way to the original graph.
 
 Although the graph generated after extracting and filtering the data is not 100% similar to the original version, we can conclude that without a doubt its similarity is around 90%.
+
+## Original
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/original.PNG)
+
+## Our Final Version
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
