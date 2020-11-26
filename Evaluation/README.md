@@ -28,7 +28,7 @@
 ## We first have to rename the columns from our dataset
         colnames(movies) <- c("Genre", "Studio", "BudgetInMillions", "GrossUS")
 
-![Columns](https://github.com/ThunderboltMonkey/DataMining/blob/unit_1/Evaluation/1960.png)
+![Columns](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/columns.png)
 
 ## We get the dataset structure to see if we can appreciate something relevant from it
         str(movies)
