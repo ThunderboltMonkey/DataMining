@@ -55,5 +55,8 @@
         axis.title.y = element_text(color="Purple", size=14)
         )  +  ggtitle("Domestic Gross % by Genre") + ylab("GrossUS") + xlab("Genre")
 
-## Final
+## Original
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/original.PNG)
+
+## Our Final Version
 ![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
