@@ -44,9 +44,9 @@
 ## We have to indicate the type of plot that we will use, in this case we will use a box plot
         BoxPlot + geom_boxplot()
 
-## We still do not have the expected result because we need to make some adjustments in the design
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/preview.png)
 
+## We still do not have the expected result because we need to make some adjustments in the design
 
 ## And the final step is to set the opacity of the boxes at a %60 percent to clearly see the dispersion of the points behind our box plots, the we set the title for the graph and the labels for the X and Y axes.
         BoxPlot + geom_jitter(shape=20) + geom_boxplot(size=0.1,alpha=0.6,color="Black",outlier.shape = NA)+ theme(
