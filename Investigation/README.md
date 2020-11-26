@@ -21,10 +21,10 @@ Joaquín Sevilla Moróder, physicist and professor at the Public University of N
 
 Seville established an analogy (which should not be interpreted literally) between grammatical construction and the structure of a graph. In this way, he arrived at equivalences such as those seen in the following table:
 
-![Table 1](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Investigation/Table1.png "Table 1")
+![Table 1](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Investigation/Table1.PNG)
 
 But it went further. From the analysis of many graphs, he drew some conclusions to recommend some tips with which to build a graph that would not give rise to confusion and would be faithful to its original message. They are those that we can observe in the following table:
 
-![Table 2](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Investigation/Table2.png "Table 2")
+![Table 2](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Investigation/Table2.PNG "Table 2")
 
 In conclusion, I can add that this analogy allows us, as Sevilla mentions, to find a structure composed of a subject and a predicate, and even literary styles. Knowing this analogy and mastering it is undoubtedly an advantage in data management since it gives us the possibility of being precise to our intentions when displaying a graph.
