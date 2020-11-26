@@ -37,3 +37,23 @@
         summary(movies)
 
 ## After this we can say that our data is filtered only with the necessary information to start plotting 
+
+## We define our graph variable and using the ggplot library we establish our X axis, Y axis, the color using the Studio's info and finally the size using the Budget millions info.
+        BoxPlot <- ggplot(movies, aes(x=Genre, y=GrossUS, color=Studio, size=BudgetInMillions))
+
+## We have to indicate the type of plot that we will use, in this case we will use a box plot
+        BoxPlot + geom_boxplot()
+
+## We still do not have the expected result because we need to make some adjustments in the design
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
+
+
+## And the final step is to set the opacity of the boxes at a %60 percent to clearly see the dispersion of the points behind our box plots, the we set the title for the graph and the labels for the X and Y axes.
+        BoxPlot + geom_jitter(shape=20) + geom_boxplot(size=0.1,alpha=0.6,color="Black",outlier.shape = NA)+ theme(
+        plot.title = element_text(color="Black", size=14, face="bold", hjust = 0.5),
+        axis.title.x = element_text(color="Purple", size=14),
+        axis.title.y = element_text(color="Purple", size=14)
+        )  +  ggtitle("Domestic Gross % by Genre") + ylab("GrossUS") + xlab("Genre")
+
+## Final
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
