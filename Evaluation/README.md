@@ -64,3 +64,5 @@
 ## Conclusion
 It was actually a very simple practice to carry out, since seeing the original graph helps to deduce many things, for example the studios and movie genres that should be used. 
 From then on, the most complicated thing in our opinion was the formatting of the graph to be able to generate it in a similar way to the original graph.
+
+Although the graph generated after extracting and filtering the data is not 100% similar to the original version, we can conclude that without a doubt its similarity is around 90%.
