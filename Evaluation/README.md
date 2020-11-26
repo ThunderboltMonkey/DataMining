@@ -60,3 +60,6 @@
 
 ## Our Final Version
 ![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
+
+## Conclusion
+It was actually a very simple practice to carry out, since seeing the original graph helps to deduce many things, for example the studios and movie genres that should be used. 
