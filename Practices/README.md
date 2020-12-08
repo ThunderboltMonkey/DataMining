@@ -1,75 +1,100 @@
-# Practice
+# MULTIPLE LINEAR REGRESSION PRACTICE
 
-## Investigate 5 geometry functions that can be added to the ggplot2 () function
+## Importing the library caTools
 
-## geom_point
-Simple scatterplots are created using the R code below. The color, size, and shape of the points can be changed using the geom_point () function as follows:
+        library(caTools)
 
-        geom_point(size, color, shape)
-![](https://ggplot2.tidyverse.org/reference/geom_point-2.png)
+## We get the route to the working directory
 
-## geom_line
-The different line types available in R software are: "blank", "solid", "dashed", "dotted", "dotdash", "longdash", "twodash".
+        getwd()
 
-        # Basic line plot with points
-        ggplot(data=df, aes(x=time, y=bill, group=1)) +
-        geom_line()+
-        geom_point()
-        # Change the line type
-        ggplot(data=df, aes(x=time, y=bill, group=1)) +
-        geom_line(linetype = "dashed")+
-        geom_point()
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_line.PNG)
+## We set the route to the working directory just in case it's not the one that we want
+        setwd("/Users/Monkey/Desktop/Unidad_2")
 
-## geom_hline
-These geoms add reference lines to a plot, either horizontal, vertical, or diagonal (specified by slope and intersection).
+## We get the directory again just to double check
+        getwd()
 
-It draws a horizontal line on the current plot at the specified ‘y’ coordinates :
+## Importing the dataset
+        dataset <- read.csv('50_Startups.csv')
 
-        # Simple scatter plot
-        sp <- ggplot(data=mtcars, aes(x=wt, y=mpg)) + geom_point()
-        # Add horizontal line at y = 2O
-        sp + geom_hline(yintercept=20)
-        # Change line type and color
-        sp + geom_hline(yintercept=20, linetype="dashed", color = "red")
-        # Change line size
-        sp + geom_hline(yintercept=20, linetype="dashed", 
-                    color = "red", size=2)
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_hline.PNG)
+## Encoding categorical data 
+        dataset$State = factor(dataset$State,
+                       levels = c('New York', 'California', 'Florida'),
+                       labels = c(1,2,3))
 
-# geom_text
-Text geoms are useful for labeling plots. They can be used by themselves as scatterplots or in cobination with other geoms, for example, for labeling points or for annotating the height of bars. geom_text() adds only text to the plot. geom_label() draws a rectangle behind the text, making it easier to read.
+        dataset
 
-        # Simple scatter plot
-        sp <- ggplot(df, aes(wt, mpg, label = rownames(df)))+
-        geom_point()
-        # Add texts
-        sp + geom_text()
-        # Change the size of the texts
-        sp + geom_text(size=6)
-        # Change vertical and horizontal adjustement
-        sp +  geom_text(hjust=0, vjust=0)
-        # Change fontface. Allowed values : 1(normal),
-        # 2(bold), 3(italic), 4(bold.italic)
-        sp + geom_text(aes(fontface=2))
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_text.PNG)
+## Setting our randomness seed
+        set.seed(123)
 
-# geom_boxplot
-The boxplot compactly displays the distribution of a continuous variable. It visualises five summary statistics (the median, two hinges and two whiskers), and all "outlying" points individually.
+## Splitting the dataset into the Training set and Test set
+        split <- sample.split(dataset$Profit, SplitRatio = 0.8)
+        training_set <- subset(dataset, split == TRUE)
+        test_set <- subset(dataset, split == FALSE)
 
-        # Basic box plot
-        p <- ggplot(ToothGrowth, aes(x=dose, y=len)) +
-        geom_boxplot()
-        p
-        # Rotate the box plot
-        p + coord_flip()
-        # Notched box plot
-        ggplot(ToothGrowth, aes(x=dose, y=len)) +
-        geom_boxplot(notch=TRUE)
-        # Change outlier, color, shape and size
-        ggplot(ToothGrowth, aes(x=dose, y=len)) +
-        geom_boxplot(outlier.colour="red", outlier.shape=8,
-                        outlier.size=4)
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_box.PNG)
+## Fitting Multiple Linear Regression to the Training set
+        #regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State)
+        regressor = lm(formula = Profit ~ .,
+               data = training_set )
 
+## Printing the results
+        summary(regressor)
 
+## Prediction the Test set results
+        y_pred = predict(regressor, newdata = test_set)
+## Printing the results
+        y_pred
+
+## Assignment: visualize the simple linear regression model with R.D.Spend 
+
+## Building the optimal model using Backward Elimination we can see every iteration as a pocedure in order to get the optimal model
+
+## First iteration
+        regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend + State,
+               data = dataset )
+        summary(regressor)
+
+## Second iteration
+        regressor = lm(formula = Profit ~ R.D.Spend + Administration + Marketing.Spend,
+                data = dataset )
+        summary(regressor)
+
+## Third iteration
+        regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
+                data = dataset )
+        summary(regressor)
+
+## Fourth iteration
+        regressor = lm(formula = Profit ~ R.D.Spend + Marketing.Spend,
+                data = dataset )
+        summary(regressor)
+
+## Now we can say that we have an optimal model so we use our prediction with the test dataset
+        y_pred = predict(regressor, newdata = test_set)
+        y_pred
+
+## Homework analise the follow atomation backwardElimination function
+
+## Basically we use the backwardElimination to select all the predictors in the model but just as an starting kind of procedure, then iteratively removes the least contributive predictors, and stops when you have a model where all predictors are statistically significant. In other words, is like cleaning up the model to get it as optimal as we can.
+        backwardElimination <- function(x, sl) {
+        numVars = length(x)
+        for (i in c(1:numVars)){
+        regressor = lm(formula = Profit ~ ., data = x)
+            maxVar = max(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"])
+            if (maxVar > sl){
+              j = which(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+              x = x[, -j]
+            }
+            numVars = numVars - 1
+          }
+          return(summary(regressor))
+        }
+
+## Finally we use our training set and our variable SL as parameters for our backwardElimination method
+        SL = 0.05
+        #dataset = dataset[, c(1,2,3,4,5)]
+        training_set
+        backwardElimination(training_set, SL)
+
+## Here is the result:
+![MLR_Result](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/MLR_Result.PNG)
