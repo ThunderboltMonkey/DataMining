@@ -1,19 +1,15 @@
 # DataMining
 
-## This is the unit 2 branch, in this branch we'll be doing all the work for the unit 2, it will contain folders for the following:
+## This is the unit 3 branch, in this branch we'll be doing all the work for the unit 3, it will contain folders for the following:
 
 * ## Research
 ### This folder is where we are putting all the investigations.
-- [Investigation 1](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Investigation)
+- [Investigation 1](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Investigation)
 
 * ## Practices
 ### This is where the practices will be.
-- [Practice 1](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Practices)
+- [Practices](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Practices)
 
 * ## Evaluation
 ### This is for the final evaluation after every unit.
-- [Evaluation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_2/Evaluation)
-
-
-* ## Notes
-### This folder is for putting all the notes and/or comments that we consider important
+- [Evaluation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Evaluation)
