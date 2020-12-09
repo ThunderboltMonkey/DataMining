@@ -9,7 +9,7 @@
         getwd()
 
 ## We set the route to the working directory just in case it's not the one that we want
-        setwd("/Users/Monkey/Desktop/Unidad_2")
+        setwd("/Users/Monkey/Desktop/Unidad_3")
 
 ## We get the directory again just to double check
         getwd()
@@ -73,7 +73,7 @@
         y_pred = predict(regressor, newdata = test_set)
         y_pred
 
-## Homework analise the follow atomation backwardElimination function
+## Homework analize the following automation backwardElimination function
 
 ## Basically we use the backwardElimination to select all the predictors in the model but just as an starting kind of procedure, then iteratively removes the least contributive predictors, and stops when you have a model where all predictors are statistically significant. In other words, is like cleaning up the model to get it as optimal as we can.
         backwardElimination <- function(x, sl) {
