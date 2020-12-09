@@ -1,15 +1,14 @@
-getwd()
-setwd("/Users/Monkey/Desktop/unidad_3")
-getwd()
-
 # Importing the dataset
 dataset <- read.csv('Social_Network_Ads.csv')
 dataset <- dataset[, 3:5]
 
-# Splitting the dataset into the Training set and Test set
-# Install.packages('caTools')
+# Import the caTools library
 library(caTools)
+
+# Set our randomness seed
 set.seed(123)
+
+# Splitting the dataset into the Training set and Test set
 split <- sample.split(dataset$Purchased, SplitRatio = 0.75)
 training_set <- subset(dataset, split == TRUE)
 test_set <- subset(dataset, split == FALSE)
@@ -33,26 +32,26 @@ y_pred
 cm = table(test_set[, 3], y_pred)
 cm
 
-# 
+# Import the ggplot2 library
 library(ggplot2)
+
+# Helps to notice any pattern on the data provided
 ggplot(training_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
+# Helps to notice any pattern on the data provided
 ggplot(training_set, aes(x=Age, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
+# Helps to notice any pattern on the data provided
 ggplot(test_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
+# Helps to notice any pattern on the data provided
 ggplot(test_set, aes(x=Age, y=Purchased)) + geom_point() + 
   stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
 # Visualization the Training set result
-# install.packages('ElemStatLearn') No work for me, 
-# manual mode. Go to this URL https://cran.r-project.org/src/contrib/Archive/ElemStatLearn/
-# Download with the latest date 2019-08-12 09:20	12M
-# Then follow this page steps https://riptutorial.com/r/example/5556/install-package-from-local-source
-
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
