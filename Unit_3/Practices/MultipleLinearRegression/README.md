@@ -97,4 +97,4 @@
         backwardElimination(training_set, SL)
 
 ## Here is the result:
-![MLR_Result](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/MultipleLinearRegression/MLR_Result.PNG)
+![MLR_Result](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/MultipleLinearRegression/MLR_Result.PNG)
