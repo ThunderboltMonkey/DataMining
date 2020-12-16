@@ -45,7 +45,7 @@
         ggplot(training_set, aes(x=Age, y=Purchased)) + geom_point() + 
         stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-![Training set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/LogisticRegression/TrainingSetSmooth.png)
+![Training set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/LogisticRegression/TrainingSetSmooth.png)
 
 ## Helps to notice any pattern on the data provided
         ggplot(test_set, aes(x=EstimatedSalary, y=Purchased)) + geom_point() + 
@@ -55,7 +55,7 @@
         ggplot(test_set, aes(x=Age, y=Purchased)) + geom_point() + 
         stat_smooth(method="glm", method.args=list(family="binomial"), se=FALSE)
 
-![Test set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/LogisticRegression/TestSetSmooth.png)
+![Test set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/LogisticRegression/TestSetSmooth.png)
 
 ## Visualization the Training set result
         library(ElemStatLearn)
@@ -74,7 +74,7 @@
         points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
         points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![Training set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/LogisticRegression/TrainingSetLR.png)
+![Training set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/LogisticRegression/TrainingSetLR.png)
 
 ## Visualising the Test set results
         library(ElemStatLearn)
@@ -93,4 +93,4 @@
         points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
         points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![Test set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/LogisticRegression/TestSetLR.png)
+![Test set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/LogisticRegression/TestSetLR.png)
