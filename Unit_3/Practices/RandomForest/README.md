@@ -59,7 +59,7 @@
     points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
     points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/RandomForest/Rplot.png) 
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/RandomForest/Rplot.png) 
 
 ## Visualising the Test set results
     library(ElemStatLearn)
@@ -76,9 +76,9 @@
     points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
     points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/RandomForest/Rplot01.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/RandomForest/Rplot01.png)
 
 ## Choosing the number of trees
     plot(classifier)
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/RandomForest/Rplot02.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/RandomForest/Rplot02.png)
