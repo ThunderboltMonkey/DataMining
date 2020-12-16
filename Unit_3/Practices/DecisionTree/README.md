@@ -57,7 +57,7 @@
         points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
         points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![Training Set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/DecisionTree/TrainingsetDT.png)
+![Training Set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/DecisionTree/TrainingsetDT.png)
 
 ## Visualising the Test set results
         library(ElemStatLearn)
@@ -74,10 +74,10 @@
         points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
         points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![Test Set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/DecisionTree/TestsetDT.png)
+![Test Set](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/DecisionTree/TestsetDT.png)
 
 ## Plotting the tree
         plot(classifier)
         text(classifier, cex=0.5)
 
-![Decision Tree](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/DecisionTree/TreeDT.png)
+![Decision Tree](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/DecisionTree/TreeDT.png)
