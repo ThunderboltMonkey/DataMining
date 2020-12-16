@@ -4,12 +4,12 @@
 
 * ## Research
 ### This folder is where we are putting all the investigations.
-- [Investigation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Investigation)
+- [Investigation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Unit_3/Investigation)
 
 * ## Practices
 ### This is where the practices will be.
-- [Practices](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Practices)
+- [Practices](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Unit_3/Practices)
 
 * ## Evaluation
 ### This is for the final evaluation after every unit.
-- [Evaluation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Evaluation)
+- [Evaluation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Unit_3/Evaluation)
