@@ -35,7 +35,7 @@
 
 ## Fitting Naive Bayes to the Training set
 ## Install.packages('e1071')
-library(e1071)
+    library(e1071)
     classifier = naiveBayes(x = training_set[,-3], 
                             y = training_set$Purchased)
     naiveBayes
@@ -64,7 +64,7 @@ library(e1071)
     points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
     points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
     
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Evaluation/Rplot.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Evaluation/Rplot.png)
 
 ## Visualising the Test set results
     library(ElemStatLearn)
@@ -81,8 +81,7 @@ library(e1071)
     points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
     points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Evaluation/Rplot01.png
-)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Evaluation/Rplot01.png)
 
 
 
