@@ -44,7 +44,7 @@ summary(regressor)
         xlab('Years of experience') +
         ylab('Salary')
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/SimpleLinearRegression/Rplot.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/SimpleLinearRegression/Rplot.png)
 
 **With the Training Set graph we can see if the values ​​are earning than expected based on their experience, there are 6 cases where they are earning well below expectations and there are 5 cases where they are earning more than expected.**
 
@@ -58,7 +58,7 @@ summary(regressor)
         xlab('Years of experience') +
         ylab('Salary')
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/SimpleLinearRegression/Rplot01.png) 
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/SimpleLinearRegression/Rplot01.png) 
 
 **In the Test Set graph we see that there are 3 cases where the salary is below what is expected and 3 cases where they are earning much more than expected. The other values ​​are gaining what was expected.**
 
