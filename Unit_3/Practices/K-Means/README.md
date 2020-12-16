@@ -32,7 +32,7 @@
         xlab = 'Number of clusters',
         ylab = 'WCSS')
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/K-Means/Rplot.png) 
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/K-Means/Rplot.png) 
 
 ## Fitting K-Means to the dataset
     set.seed(29)
@@ -55,6 +55,6 @@
          xlab = 'Annual Income',
          ylab = 'Spending Score')
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Practices/K-Means/Rplot01.png) 
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_3/Unit_3/Practices/K-Means/Rplot01.png) 
 
 **In the end we obtain a graph with 5 clusters that we can use to create market campaigns focusing only on one group, which in this case would be cluster number 1.**
