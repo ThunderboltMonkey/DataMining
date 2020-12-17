@@ -30,7 +30,7 @@
     xlab = 'Number of clusters',
     ylab = 'WCSS')
     
-![Elbow Method](https://github.com/ThunderboltMonkey/DataMining/blob/unit_4/Evaluation/ElbowMethod.png)
+![Elbow Method](https://github.com/ThunderboltMonkey/DataMining/blob/unit_4/Unit_4/Evaluation/ElbowMethod.png)
 
 ## Then we have to adjust our model to the data from our dataframe
 ## We set our seed of randomness and then select the number of clusters for the model
@@ -51,4 +51,4 @@
     xlab = 'Length',
     ylab = 'Width')
 
-![Kmeans clustering](https://github.com/ThunderboltMonkey/DataMining/blob/unit_4/Evaluation/Kmeans.png)
+![Kmeans clustering](https://github.com/ThunderboltMonkey/DataMining/blob/unit_4/Unit_4/Evaluation/Kmeans.png)
