@@ -28,7 +28,7 @@
 ## We first have to rename the columns from our dataset
         colnames(movies) <- c("Genre", "Studio", "BudgetInMillions", "GrossUS")
 
-![Columns](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/columns.png)
+![Columns](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Evaluation/u2/columns.png)
 
 ## We get the dataset structure to see if we can appreciate something relevant from it
         str(movies)
@@ -44,7 +44,7 @@
 ## We have to indicate the type of plot that we will use, in this case we will use a box plot
         BoxPlot + geom_boxplot()
 
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/preview.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Evaluation/u2/preview.png)
 
 ## We still do not have the expected result because we need to make some adjustments in the design
 
@@ -62,7 +62,7 @@ From then on, the most complicated thing in our opinion was the formatting of th
 Although the graph generated after extracting and filtering the data is not 100% similar to the original version, we can conclude that without a doubt its similarity is around 90%.
 
 ## Original
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/original.PNG)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Evaluation/u2/original.PNG)
 
 ## Our Final Version
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Evaluation/Unidad2Examen.png)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Evaluation/u2/Unidad2Examen.png)
