@@ -19,7 +19,7 @@ The different line types available in R software are: "blank", "solid", "dashed"
         ggplot(data=df, aes(x=time, y=bill, group=1)) +
         geom_line(linetype = "dashed")+
         geom_point()
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_line.PNG)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Practices/geom_line.PNG)
 
 ## geom_hline
 These geoms add reference lines to a plot, either horizontal, vertical, or diagonal (specified by slope and intersection).
@@ -35,7 +35,7 @@ It draws a horizontal line on the current plot at the specified ‘y’ coordina
         # Change line size
         sp + geom_hline(yintercept=20, linetype="dashed", 
                     color = "red", size=2)
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_hline.PNG)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Practices/geom_hline.PNG)
 
 # geom_text
 Text geoms are useful for labeling plots. They can be used by themselves as scatterplots or in cobination with other geoms, for example, for labeling points or for annotating the height of bars. geom_text() adds only text to the plot. geom_label() draws a rectangle behind the text, making it easier to read.
@@ -52,7 +52,7 @@ Text geoms are useful for labeling plots. They can be used by themselves as scat
         # Change fontface. Allowed values : 1(normal),
         # 2(bold), 3(italic), 4(bold.italic)
         sp + geom_text(aes(fontface=2))
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_text.PNG)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Practices/geom_text.PNG)
 
 # geom_boxplot
 The boxplot compactly displays the distribution of a continuous variable. It visualises five summary statistics (the median, two hinges and two whiskers), and all "outlying" points individually.
@@ -70,6 +70,6 @@ The boxplot compactly displays the distribution of a continuous variable. It vis
         ggplot(ToothGrowth, aes(x=dose, y=len)) +
         geom_boxplot(outlier.colour="red", outlier.shape=8,
                         outlier.size=4)
-![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Practices/geom_box.PNG)
+![](https://github.com/ThunderboltMonkey/DataMining/blob/unit_2/Unit_2/Practices/geom_box.PNG)
 
 
