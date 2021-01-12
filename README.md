@@ -13,5 +13,3 @@
 * ## Evaluation
 ### This is for the final evaluation after every unit.
 - [Evaluation](https://github.com/ThunderboltMonkey/DataMining/tree/unit_3/Unit_3/Evaluation)
-=======
-## This is the development branch, this actually was updated as the default branch so we'll be working on this instead of the master branch.
